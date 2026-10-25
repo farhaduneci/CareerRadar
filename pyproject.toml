@@ -1,0 +1,15 @@
+[project]
+name = "careerradar"
+version = "0.1.0"
+description = "Watch the careers pages of the companies shaping AI and report how their tech hiring changes, week by week"
+requires-python = ">=3.10"
+dependencies = ["radarkit @ git+https://github.com/farhaduneci/RadarKit@v0.1.1"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["careerradar*"]
+
+[tool.setuptools.package-data]
+careerradar = ["data/*.json", "prompts/*.md", "templates/*", "migrations/*.sql"]

@@ -1,0 +1,7 @@
+{
+ "_doc": "Copy to config.json (gitignored) and keep only what you change; every key and its default is in careerradar/data/config.default.json.",
+ "notify": {"channel": "telegram"},
+ "jev": {"enabled": true, "daily_cap": 400},
+ "publish": {"site_name": "Radar", "post_url": "https://radar.example.com/posts/{week}", "hold_hours": 24},
+ "api": {"public_url": "http://localhost:8787"}
+}

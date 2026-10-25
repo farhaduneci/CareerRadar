@@ -1,0 +1,48 @@
+{
+ "_doc": "Every setting with its default. Override any key in config.json (local) or the CONFIG var (Worker, JSON).",
+ "crawl": {
+  "min_hours": 20,
+  "max_requests": 900,
+  "details_per_tick": 150,
+  "baseline_sample": 200,
+  "shrink": 0.5
+ },
+ "jev": {
+  "enabled": true,
+  "model": "jev-latest",
+  "daily_cap": 400,
+  "per_tick": 40
+ },
+ "ai": {
+  "model": "@cf/moonshotai/kimi-k2.6",
+  "max_tokens": 4000,
+  "extra": {
+   "chat_template_kwargs": {
+    "thinking": false
+   }
+  }
+ },
+ "notify": {
+  "channel": "telegram",
+  "title": "careerradar"
+ },
+ "publish": {
+  "hold_hours": 24,
+  "issue_weekday": 0,
+  "site_name": "Radar",
+  "post_url": "https://radar.example.com/posts/{week}"
+ },
+ "api": {
+  "public_url": "http://localhost:8787"
+ },
+ "report": {
+  "top_skills": 12,
+  "top_companies": 12,
+  "top_families": 10,
+  "min_family_postings": 2
+ },
+ "health": {
+  "tick_hours": 2,
+  "board_fail_streak": 3
+ }
+}
