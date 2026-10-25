@@ -1,0 +1,16 @@
+{
+ "ai_centrality": {"type": "noul",
+  "instructions": "Is building, training, evaluating, deploying or researching AI/ML models the core of `job` (not a nice-to-have, not merely using AI tools)?"},
+ "emerging": {"type": "noul",
+  "instructions": "Does `job` describe a kind of role that barely existed in tech hiring before 2024 (for example forward deployed AI engineer, agent engineer, AI evals, model behaviour, AI red teaming), rather than a long-established role?"},
+ "focus": {"type": "choice",
+  "instructions": "What is the main focus of the work in `job`?",
+  "criteria": {
+   "frontier_models": "Training, researching or aligning large models themselves.",
+   "ai_products": "Building products, agents or applications on top of AI models.",
+   "ai_infrastructure": "Compute, serving, data or tooling that AI training and inference run on.",
+   "silicon": "Chips, hardware or physical systems.",
+   "robotics": "Robots, vehicles or other autonomous machines.",
+   "core_software": "Software, data or security work where AI is not central.",
+   "customer_delivery": "Deploying and adapting technology at customers' sites."}}
+}
