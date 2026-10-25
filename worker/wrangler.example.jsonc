@@ -1,0 +1,21 @@
+// Copy to wrangler.jsonc (gitignored), set the D1 database_id from `npx wrangler d1 create careerradar`, then
+// `python3 scripts/bundle.py && cd worker && uv run pywrangler deploy`. Secrets: `npx wrangler secret put <NAME>`
+// (TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, TYPESAFE_API_KEY, LINK_SECRET, SITE_DEPLOY_HOOK).
+{
+  "name": "careerradar",
+  "main": "src/entry.py",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["python_workers"],
+  // A tick every 10 minutes: one company crawl, or the weekly build on Monday, plus publishing due drafts.
+  "triggers": { "crons": ["*/10 * * * *"] },
+  "d1_databases": [{ "binding": "DB", "database_name": "careerradar", "database_id": "<your-d1-database-id>" }],
+  "ai": { "binding": "AI" },
+  // Overrides merged onto careerradar/data/config.default.json; COMPANIES (optional) replaces the shipped watch list.
+  "vars": {
+    "CONFIG": "{\"api\": {\"public_url\": \"https://careerradar.<your-subdomain>.workers.dev\"}, \"publish\": {\"site_name\": \"Radar\", \"post_url\": \"https://radar.example.com/posts/{week}\"}}"
+  },
+  // Paid plan: big boards (Google, Apple, Amazon, Workday) need hundreds of requests and seconds of CPU per crawl.
+  "limits": { "cpu_ms": 300000 },
+  "observability": { "enabled": true },
+  "rules": [{ "type": "Data", "globs": ["**/*.json", "**/*.md", "**/*.txt", "**/*.sql", "**/*.html"], "fallthrough": true }]
+}
