@@ -1,0 +1,36 @@
+{
+ "_doc": "Which postings count as tech roles, and their function and seniority, from the title alone. Regexes, case-insensitive, first match wins. A title matching `exclude` is dropped before `functions` is tried; a title matching no function is not a tech role.",
+ "exclude": [
+  "\\b(account|sales|business development|partnerships?|alliances?) (executive|manager|director|lead|representative|development)\\b",
+  "\\bsales\\b(?! engineer)", "\\b(recruit|sourcer|talent acquisition|people partner|hr business|human resources)",
+  "\\b(marketing|communications|public relations|brand|events?|content strategist|copywriter|social media)\\b",
+  "\\b(counsel|attorney|legal|paralegal|compliance officer|policy (manager|lead|analyst))\\b",
+  "\\b(accountant|accounting|finance|financial analyst|treasury|tax|payroll|controller|fp&a|procurement|buyer)\\b",
+  "\\b(executive assistant|administrative|office manager|receptionist|facilities|workplace|real estate|chef|barista)\\b",
+  "\\b(customer success|customer support|account manager|support specialist|community manager)\\b",
+  "\\b(product manager|program manager|project manager|product marketing|product owner|chief of staff|scrum master)\\b",
+  "\\b(designer|ux researcher|user experience|creative director|illustrator)\\b",
+  "\\b(retail|store|warehouse|fulfillment|delivery associate|driver|specialist: seasonal|genius)\\b"
+ ],
+ "functions": [
+  {"name": "AI research", "patterns": ["research (scientist|engineer|lead)", "\\bresearcher\\b", "member of (the )?technical staff", "\\b(alignment|interpretability|pretraining|post-training|reinforcement learning|rlhf)\\b"]},
+  {"name": "ML & AI engineering", "patterns": ["machine learning", "\\bml\\b", "\\bml(ops|e)\\b", "\\bai (engineer|developer|scientist|infrastructure)", "applied (scientist|ai)", "\\bllms?\\b", "deep learning", "computer vision", "\\bnlp\\b", "perception", "inference", "generative ai", "\\bgenai\\b", "agents?\\b.*engineer"]},
+  {"name": "Forward deployed & solutions", "patterns": ["forward[- ]deployed", "solutions? (engineer|architect)", "sales engineer", "customer engineer", "field (application )?engineer", "deployment (strategist|engineer)", "implementation engineer", "technical account", "developer (advocate|relations)", "partner engineer"]},
+  {"name": "Infrastructure & reliability", "patterns": ["infrastructure", "\\bsre\\b", "site reliability", "devops", "platform engineer", "cloud (engineer|architect|ops)", "network(ing)? engineer", "systems? (engineer|administrator)", "kubernetes", "production engineer", "reliability", "datacenter|data center", "\\bhpc\\b", "storage engineer", "it (engineer|support)"]},
+  {"name": "Data", "patterns": ["data (engineer|scientist|science|analyst|architect|platform|infrastructure)", "analytics engineer", "business intelligence", "\\bbi (engineer|developer)", "database"]},
+  {"name": "Security", "patterns": ["security", "\\bsecops\\b", "red team", "threat", "privacy engineer", "cryptograph", "detection (and|&) response", "vulnerability", "appsec"]},
+  {"name": "Silicon & hardware", "patterns": ["\\basic\\b", "\\brtl\\b", "verification", "silicon", "\\bchip\\b", "hardware", "physical design", "analog", "\\bfpga\\b", "firmware", "\\bdft\\b", "packaging engineer", "power (delivery|integrity|engineer)", "signal integrity", "electrical engineer", "mechanical engineer", "\\bsoc\\b", "\\bcpu\\b", "\\bgpu (architect|design)", "photonics", "semiconductor", "process engineer", "yield"]},
+  {"name": "Robotics & autonomy", "patterns": ["robot", "autonomy", "autonomous", "controls? engineer", "motion planning", "embedded", "simulation engineer", "localization", "actuator"]},
+  {"name": "Frontend & mobile", "patterns": ["front[- ]?end", "\\bios\\b", "android", "mobile", "\\bui engineer", "web (engineer|developer)", "design engineer"]},
+  {"name": "Software engineering", "patterns": ["software", "engineer", "developer", "\\bswe\\b", "programmer", "architect", "technical staff", "\\bcto\\b", "tech lead"]}
+ ],
+ "seniority": [
+  {"name": "Intern", "patterns": ["\\bintern(ship)?\\b", "\\bco-?op\\b", "\\bstudent\\b", "apprentice"]},
+  {"name": "Entry", "patterns": ["new grad", "graduate", "university", "early career", "entry[- ]level", "\\bjunior\\b", "\\bjr\\.?\\b", "\\bassociate\\b", "\\b(engineer|developer) i\\b", "\\b(engineer|scientist) 1\\b"]},
+  {"name": "Manager", "patterns": ["\\bmanager\\b", "\\bdirector\\b", "head of", "\\bvp\\b", "vice president", "\\bchief\\b"]},
+  {"name": "Principal+", "patterns": ["principal", "distinguished", "\\bfellow\\b", "senior staff", "sr\\.? staff"]},
+  {"name": "Staff", "patterns": ["\\bstaff\\b", "\\blead\\b"]},
+  {"name": "Senior", "patterns": ["senior", "\\bsr\\.?\\b", "\\biii\\b", "\\biv\\b", "\\b(engineer|scientist) [345]\\b"]},
+  {"name": "Mid", "patterns": [""]}
+ ]
+}

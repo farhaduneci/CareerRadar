@@ -1,0 +1,581 @@
+{
+ "_doc": "Skills and technologies counted in job descriptions. Each entry: group, and regexes matched case-insensitively against title + description. Add or rename freely; history is recomputed from stored descriptions.",
+ "skills": {
+  "Python": {
+   "group": "Languages",
+   "patterns": [
+    "\\bpython\\b"
+   ]
+  },
+  "Go": {
+   "group": "Languages",
+   "patterns": [
+    "\\bgolang\\b",
+    "\\bgo\\b(?= ?(,|/|and|or|\\)|programming|services|code))"
+   ]
+  },
+  "Rust": {
+   "group": "Languages",
+   "patterns": [
+    "\\brust\\b"
+   ]
+  },
+  "C++": {
+   "group": "Languages",
+   "patterns": [
+    "c\\+\\+"
+   ]
+  },
+  "C": {
+   "group": "Languages",
+   "patterns": [
+    "\\bc\\b(?= ?(,|/|and|\\+|programming))"
+   ]
+  },
+  "Java": {
+   "group": "Languages",
+   "patterns": [
+    "\\bjava\\b(?!script)"
+   ]
+  },
+  "Kotlin": {
+   "group": "Languages",
+   "patterns": [
+    "\\bkotlin\\b"
+   ]
+  },
+  "Scala": {
+   "group": "Languages",
+   "patterns": [
+    "\\bscala\\b"
+   ]
+  },
+  "TypeScript": {
+   "group": "Languages",
+   "patterns": [
+    "\\btypescript\\b"
+   ]
+  },
+  "JavaScript": {
+   "group": "Languages",
+   "patterns": [
+    "\\bjavascript\\b",
+    "\\bnode\\.?js\\b"
+   ]
+  },
+  "Swift": {
+   "group": "Languages",
+   "patterns": [
+    "\\bswift\\b"
+   ]
+  },
+  "SQL": {
+   "group": "Languages",
+   "patterns": [
+    "\\bsql\\b"
+   ]
+  },
+  "Verilog/SystemVerilog": {
+   "group": "Languages",
+   "patterns": [
+    "verilog",
+    "\\bvhdl\\b"
+   ]
+  },
+  "CUDA": {
+   "group": "Accelerators",
+   "patterns": [
+    "\\bcuda\\b"
+   ]
+  },
+  "Triton": {
+   "group": "Accelerators",
+   "patterns": [
+    "\\btriton\\b"
+   ]
+  },
+  "GPU kernels": {
+   "group": "Accelerators",
+   "patterns": [
+    "\\bkernels?\\b.*\\bgpu|gpu kernels?",
+    "\\bcutlass\\b"
+   ]
+  },
+  "TPU": {
+   "group": "Accelerators",
+   "patterns": [
+    "\\btpus?\\b"
+   ]
+  },
+  "ROCm": {
+   "group": "Accelerators",
+   "patterns": [
+    "\\brocm\\b"
+   ]
+  },
+  "NCCL / collectives": {
+   "group": "Accelerators",
+   "patterns": [
+    "\\bnccl\\b",
+    "collective communication",
+    "\\brdma\\b",
+    "infiniband"
+   ]
+  },
+  "PyTorch": {
+   "group": "ML frameworks",
+   "patterns": [
+    "pytorch",
+    "\\btorch\\b"
+   ]
+  },
+  "JAX": {
+   "group": "ML frameworks",
+   "patterns": [
+    "\\bjax\\b"
+   ]
+  },
+  "TensorFlow": {
+   "group": "ML frameworks",
+   "patterns": [
+    "tensorflow"
+   ]
+  },
+  "Hugging Face": {
+   "group": "ML frameworks",
+   "patterns": [
+    "hugging ?face",
+    "\\btransformers library"
+   ]
+  },
+  "vLLM / SGLang": {
+   "group": "ML frameworks",
+   "patterns": [
+    "\\bvllm\\b",
+    "\\bsglang\\b",
+    "tensorrt"
+   ]
+  },
+  "LLMs": {
+   "group": "AI",
+   "patterns": [
+    "\\bllms?\\b",
+    "large language models?",
+    "foundation models?",
+    "frontier models?"
+   ]
+  },
+  "Generative AI": {
+   "group": "AI",
+   "patterns": [
+    "generative ai",
+    "\\bgenai\\b",
+    "gen ai"
+   ]
+  },
+  "AI agents": {
+   "group": "AI",
+   "patterns": [
+    "\\bai agents?\\b",
+    "agentic",
+    "\\bagents? (sdk|frameworks?|workflows?|systems|platform)",
+    "(multi|sub)-agents?",
+    "coding agents?",
+    "llm agents?"
+   ]
+  },
+  "RAG / retrieval": {
+   "group": "AI",
+   "patterns": [
+    "\\brag\\b",
+    "retrieval[- ]augmented",
+    "vector (database|search|store)",
+    "embeddings?"
+   ]
+  },
+  "Fine-tuning": {
+   "group": "AI",
+   "patterns": [
+    "fine[- ]?tun",
+    "\\blora\\b",
+    "\\bsft\\b"
+   ]
+  },
+  "RL / RLHF": {
+   "group": "AI",
+   "patterns": [
+    "\\brlhf\\b",
+    "reinforcement learning",
+    "\\brl\\b"
+   ]
+  },
+  "Evals": {
+   "group": "AI",
+   "patterns": [
+    "\\bevals?\\b",
+    "evaluations? (of|for) (models|llms|ai)",
+    "model evaluation"
+   ]
+  },
+  "Pretraining": {
+   "group": "AI",
+   "patterns": [
+    "pre-?training",
+    "large[- ]scale training",
+    "distributed training"
+   ]
+  },
+  "Inference & serving": {
+   "group": "AI",
+   "patterns": [
+    "\\binference\\b",
+    "model serving",
+    "serving (stack|infrastructure|systems)"
+   ]
+  },
+  "Multimodal": {
+   "group": "AI",
+   "patterns": [
+    "multi-?modal",
+    "vision[- ]language",
+    "\\bvlms?\\b"
+   ]
+  },
+  "Speech & audio": {
+   "group": "AI",
+   "patterns": [
+    "speech recognition",
+    "text-to-speech",
+    "\\btts\\b",
+    "\\basr\\b",
+    "audio models?"
+   ]
+  },
+  "Computer vision": {
+   "group": "AI",
+   "patterns": [
+    "computer vision",
+    "image (generation|models)",
+    "video (generation|models)"
+   ]
+  },
+  "Prompt engineering": {
+   "group": "AI",
+   "patterns": [
+    "prompt engineering",
+    "prompting"
+   ]
+  },
+  "MCP": {
+   "group": "AI",
+   "patterns": [
+    "model context protocol",
+    "\\bmcp\\b"
+   ]
+  },
+  "AI safety & alignment": {
+   "group": "AI",
+   "patterns": [
+    "\\b(ai|model|value) alignment\\b",
+    "alignment (research|team|science|techniques)",
+    "ai safety",
+    "interpretability",
+    "red[- ]teaming",
+    "responsible ai"
+   ]
+  },
+  "Kubernetes": {
+   "group": "Infrastructure",
+   "patterns": [
+    "kubernetes",
+    "\\bk8s\\b"
+   ]
+  },
+  "Docker / containers": {
+   "group": "Infrastructure",
+   "patterns": [
+    "\\bdocker\\b",
+    "containers?\\b"
+   ]
+  },
+  "Terraform / IaC": {
+   "group": "Infrastructure",
+   "patterns": [
+    "terraform",
+    "infrastructure as code",
+    "pulumi"
+   ]
+  },
+  "Linux": {
+   "group": "Infrastructure",
+   "patterns": [
+    "\\blinux\\b"
+   ]
+  },
+  "Distributed systems": {
+   "group": "Infrastructure",
+   "patterns": [
+    "distributed systems?"
+   ]
+  },
+  "Observability": {
+   "group": "Infrastructure",
+   "patterns": [
+    "observability",
+    "prometheus",
+    "grafana",
+    "opentelemetry"
+   ]
+  },
+  "Networking": {
+   "group": "Infrastructure",
+   "patterns": [
+    "\\btcp/ip\\b",
+    "\\bbgp\\b",
+    "networking"
+   ]
+  },
+  "Slurm / HPC": {
+   "group": "Infrastructure",
+   "patterns": [
+    "\\bslurm\\b",
+    "\\bhpc\\b",
+    "high[- ]performance computing",
+    "supercomput"
+   ]
+  },
+  "AWS": {
+   "group": "Cloud",
+   "patterns": [
+    "\\baws\\b",
+    "amazon web services"
+   ]
+  },
+  "GCP": {
+   "group": "Cloud",
+   "patterns": [
+    "\\bgcp\\b",
+    "google cloud"
+   ]
+  },
+  "Azure": {
+   "group": "Cloud",
+   "patterns": [
+    "\\bazure\\b"
+   ]
+  },
+  "Kafka": {
+   "group": "Data",
+   "patterns": [
+    "\\bkafka\\b"
+   ]
+  },
+  "Spark": {
+   "group": "Data",
+   "patterns": [
+    "\\bspark\\b"
+   ]
+  },
+  "Airflow / orchestration": {
+   "group": "Data",
+   "patterns": [
+    "airflow",
+    "dagster",
+    "\\bdbt\\b"
+   ]
+  },
+  "PostgreSQL": {
+   "group": "Data",
+   "patterns": [
+    "postgres"
+   ]
+  },
+  "Snowflake / Databricks": {
+   "group": "Data",
+   "patterns": [
+    "\\bsnowflake\\b",
+    "databricks"
+   ]
+  },
+  "React": {
+   "group": "Product engineering",
+   "patterns": [
+    "\\breact\\b"
+   ]
+  },
+  "Next.js": {
+   "group": "Product engineering",
+   "patterns": [
+    "next\\.?js"
+   ]
+  },
+  "GraphQL": {
+   "group": "Product engineering",
+   "patterns": [
+    "graphql"
+   ]
+  },
+  "gRPC / APIs": {
+   "group": "Product engineering",
+   "patterns": [
+    "\\bgrpc\\b",
+    "rest(ful)? apis?"
+   ]
+  },
+  "iOS / Android": {
+   "group": "Product engineering",
+   "patterns": [
+    "\\bios\\b",
+    "android"
+   ]
+  },
+  "Robotics": {
+   "group": "Robotics",
+   "patterns": [
+    "robotics?",
+    "\\bros2?\\b",
+    "manipulation",
+    "humanoid"
+   ]
+  },
+  "Autonomy & perception": {
+   "group": "Robotics",
+   "patterns": [
+    "perception",
+    "sensor fusion",
+    "lidar",
+    "\\bslam\\b",
+    "motion planning",
+    "autonomous (vehicles?|driving|systems|robots?|machines|navigation)",
+    "self-driving"
+   ]
+  },
+  "Simulation": {
+   "group": "Robotics",
+   "patterns": [
+    "simulation",
+    "digital twin",
+    "isaac sim"
+   ]
+  },
+  "Embedded": {
+   "group": "Robotics",
+   "patterns": [
+    "embedded",
+    "\\brtos\\b",
+    "microcontroller"
+   ]
+  },
+  "Chip design": {
+   "group": "Silicon",
+   "patterns": [
+    "\\basic\\b",
+    "\\brtl\\b",
+    "physical design",
+    "tape-?out",
+    "\\bsoc\\b"
+   ]
+  },
+  "Verification": {
+   "group": "Silicon",
+   "patterns": [
+    "\\buvm\\b",
+    "formal verification",
+    "design verification"
+   ]
+  },
+  "Advanced packaging": {
+   "group": "Silicon",
+   "patterns": [
+    "advanced packaging",
+    "chiplets?",
+    "\\bcowos\\b",
+    "\\bhbm\\b"
+   ]
+  },
+  "Security engineering": {
+   "group": "Security",
+   "patterns": [
+    "threat model",
+    "penetration testing",
+    "\\bsoc 2\\b",
+    "zero trust",
+    "\\biam\\b"
+   ]
+  },
+  "Security clearance": {
+   "group": "Security",
+   "patterns": [
+    "security clearance",
+    "\\bts/sci\\b",
+    "secret clearance"
+   ]
+  },
+  "Cryptography": {
+   "group": "Security",
+   "patterns": [
+    "cryptograph",
+    "post-quantum"
+   ]
+  },
+  "Quantum": {
+   "group": "Emerging",
+   "patterns": [
+    "quantum (computing|error|hardware|algorithm)",
+    "qubits?"
+   ]
+  },
+  "Blockchain": {
+   "group": "Emerging",
+   "patterns": [
+    "blockchain",
+    "stablecoin",
+    "crypto(currency| assets)"
+   ]
+  },
+  "AR / VR": {
+   "group": "Emerging",
+   "patterns": [
+    "augmented reality",
+    "virtual reality",
+    "\\bar/vr\\b",
+    "\\bxr\\b",
+    "spatial computing"
+   ]
+  },
+  "Energy & datacenter power": {
+   "group": "Emerging",
+   "patterns": [
+    "power (systems|infrastructure)",
+    "energy (systems|grid)",
+    "liquid cooling",
+    "megawatt"
+   ]
+  },
+  "Customer-facing": {
+   "group": "Ways of working",
+   "patterns": [
+    "customer-facing",
+    "work directly with customers",
+    "customers' (teams|engineers)"
+   ]
+  },
+  "Remote": {
+   "group": "Ways of working",
+   "patterns": [
+    "\\bremote\\b"
+   ]
+  },
+  "AI-assisted coding": {
+   "group": "Ways of working",
+   "patterns": [
+    "ai[- ]assisted (coding|development)",
+    "coding assistants?",
+    "copilot",
+    "cursor\\b",
+    "claude code",
+    "ai coding tools"
+   ]
+  }
+ }
+}
