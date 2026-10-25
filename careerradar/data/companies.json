@@ -1,0 +1,663 @@
+{
+ "_doc": "Default watch list: 50 companies shaping AI and future tech (docs/research/top-companies.md). Runners-up and companies without a public feed are listed with enabled: false.",
+ "companies": [
+  {
+   "name": "OpenAI",
+   "slug": "openai",
+   "segment": "frontier-lab",
+   "why": "Maker of ChatGPT and GPT models; mission-stated AGI developer",
+   "boards": [
+    "ashby:openai"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Anthropic",
+   "slug": "anthropic",
+   "segment": "frontier-lab",
+   "why": "Maker of Claude; AI safety and research company",
+   "boards": [
+    "greenhouse:anthropic"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Google DeepMind",
+   "slug": "google-deepmind",
+   "segment": "frontier-lab",
+   "why": "Alphabet's AI lab behind Gemini; roles listed on Google careers under company=DeepMind",
+   "boards": [
+    "google:company=DeepMind"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "SpaceXSI (formerly xAI)",
+   "slug": "xai",
+   "segment": "frontier-lab",
+   "why": "Grok model developer; site and Greenhouse board now branded SpaceXSI",
+   "boards": [
+    "greenhouse:xai"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Mistral AI",
+   "slug": "mistral-ai",
+   "segment": "frontier-lab",
+   "why": "Europe's leading frontier lab, open-weight models",
+   "boards": [
+    "ashby:mistral.ai"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Cohere",
+   "slug": "cohere",
+   "segment": "frontier-lab",
+   "why": "Enterprise-focused LLMs and secure AI deployments",
+   "boards": [
+    "ashby:cohere"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Thinking Machines Lab",
+   "slug": "thinking-machines-lab",
+   "segment": "frontier-lab",
+   "why": "New frontier research lab (Connectionism research, Tinker)",
+   "boards": [
+    "ashby:thinkingmachines"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Google",
+   "slug": "google",
+   "segment": "big-tech",
+   "why": "Gemini, Google Cloud and custom TPU silicon",
+   "boards": [
+    "google:*"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Microsoft",
+   "slug": "microsoft",
+   "segment": "big-tech",
+   "why": "Azure AI, Copilot, largest enterprise AI distribution",
+   "boards": [
+    "microsoft:*"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Amazon",
+   "slug": "amazon",
+   "segment": "big-tech",
+   "why": "AWS (Bedrock, Trainium chips) and Amazon devices/robotics",
+   "boards": [
+    "amazon:software-development,machine-learning-science,data-science,research-science,solutions-architect,hardware-development,systems-quality-security-engineering,database-administration,operations-it-support-engineering"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Meta",
+   "slug": "meta",
+   "segment": "big-tech",
+   "why": "Llama models and Meta Superintelligence Labs",
+   "boards": [],
+   "enabled": false,
+   "note": "no public job feed: the careers site blocks non-browser clients (checked 2026-10-25)"
+  },
+  {
+   "name": "Apple",
+   "slug": "apple",
+   "segment": "big-tech",
+   "why": "Apple Intelligence on-device and Private Cloud Compute",
+   "boards": [
+    "apple:*"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Oracle",
+   "slug": "oracle",
+   "segment": "big-tech",
+   "why": "OCI AI infrastructure, a major GPU-cloud builder",
+   "boards": [
+    "oracle:eeho.fa.us2/CX_45001"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Salesforce",
+   "slug": "salesforce",
+   "segment": "big-tech",
+   "why": "Agentforce, the largest enterprise AI-agent platform push",
+   "boards": [
+    "workday:salesforce.wd12.myworkdayjobs.com/salesforce/External_Career_Site"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "NVIDIA",
+   "slug": "nvidia",
+   "segment": "ai-chips",
+   "why": "Dominant AI accelerator, networking and CUDA platform",
+   "boards": [
+    "workday:nvidia.wd5.myworkdayjobs.com/nvidia/NVIDIAExternalCareerSite"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "AMD",
+   "slug": "amd",
+   "segment": "ai-chips",
+   "why": "Instinct GPUs, main merchant alternative to NVIDIA",
+   "boards": [
+    "jibe:careers.amd.com"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Intel",
+   "slug": "intel",
+   "segment": "ai-chips",
+   "why": "x86 CPUs and Intel Foundry (leading-edge US fab)",
+   "boards": [
+    "workday:intel.wd1.myworkdayjobs.com/intel/External"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Broadcom",
+   "slug": "broadcom",
+   "segment": "ai-chips",
+   "why": "AI data-center Ethernet switching and custom accelerators",
+   "boards": [
+    "workday:broadcom.wd1.myworkdayjobs.com/broadcom/External_Career"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Qualcomm",
+   "slug": "qualcomm",
+   "segment": "ai-chips",
+   "why": "On-device AI across mobile, PC, automotive",
+   "boards": [
+    "pcsx:careers.qualcomm.com/qualcomm.com"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Arm",
+   "slug": "arm",
+   "segment": "ai-chips",
+   "why": "CPU architecture under most AI devices and many AI servers",
+   "boards": [
+    "talentbrew:careers.arm.com"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Micron",
+   "slug": "micron",
+   "segment": "ai-chips",
+   "why": "HBM memory, a key AI-accelerator bottleneck",
+   "boards": [
+    "workday:micron.wd1.myworkdayjobs.com/micron/External"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Cerebras",
+   "slug": "cerebras",
+   "segment": "ai-chips",
+   "why": "Wafer-scale AI chip (WSE-3) for training and inference",
+   "boards": [
+    "ashby:cerebras"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Groq",
+   "slug": "groq",
+   "segment": "ai-chips",
+   "why": "LPU inference chips and inference cloud",
+   "boards": [
+    "gem:groq"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Tenstorrent",
+   "slug": "tenstorrent",
+   "segment": "ai-chips",
+   "why": "RISC-V and open-software AI computers",
+   "boards": [
+    "greenhouse:tenstorrent"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Databricks",
+   "slug": "databricks",
+   "segment": "ai-infra-data",
+   "why": "Data + AI platform (lakehouse, agents, Mosaic)",
+   "boards": [
+    "greenhouse:databricks"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Snowflake",
+   "slug": "snowflake",
+   "segment": "ai-infra-data",
+   "why": "AI Data Cloud, enterprise agents over warehouse data",
+   "boards": [
+    "ashby:snowflake"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Scale AI",
+   "slug": "scale-ai",
+   "segment": "ai-infra-data",
+   "why": "Training data and evaluations for AI labs and governments",
+   "boards": [
+    "greenhouse:scaleai"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "CoreWeave",
+   "slug": "coreweave",
+   "segment": "ai-infra-data",
+   "why": "Largest specialist AI GPU cloud",
+   "boards": [
+    "greenhouse:coreweave"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Hugging Face",
+   "slug": "hugging-face",
+   "segment": "ai-infra-data",
+   "why": "Open-source model hub and libraries",
+   "boards": [
+    "workable:huggingface"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Together AI",
+   "slug": "together-ai",
+   "segment": "ai-infra-data",
+   "why": "AI-native cloud for open-model training and inference",
+   "boards": [
+    "greenhouse:togetherai"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Cloudflare",
+   "slug": "cloudflare",
+   "segment": "ai-infra-data",
+   "why": "Edge network running serverless GPU inference (Workers AI)",
+   "boards": [
+    "greenhouse:cloudflare"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Fireworks AI",
+   "slug": "fireworks-ai",
+   "segment": "ai-infra-data",
+   "why": "Inference and fine-tuning platform for open models",
+   "boards": [
+    "ashby:fireworks"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Lambda",
+   "slug": "lambda",
+   "segment": "ai-infra-data",
+   "why": "GPU cloud for training and inference",
+   "boards": [
+    "ashby:lambda"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Anysphere (Cursor)",
+   "slug": "cursor",
+   "segment": "devtools-ai-apps",
+   "why": "Cursor, the leading AI coding agent/editor",
+   "boards": [
+    "ashby:cursor"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Cognition",
+   "slug": "cognition",
+   "segment": "devtools-ai-apps",
+   "why": "Devin autonomous software engineer",
+   "boards": [
+    "ashby:cognition"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Perplexity",
+   "slug": "perplexity",
+   "segment": "devtools-ai-apps",
+   "why": "AI answer engine and Comet agentic browser",
+   "boards": [
+    "ashby:perplexity"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "ElevenLabs",
+   "slug": "elevenlabs",
+   "segment": "devtools-ai-apps",
+   "why": "Leading voice AI models and voice agents",
+   "boards": [
+    "ashby:elevenlabs"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Harvey",
+   "slug": "harvey",
+   "segment": "devtools-ai-apps",
+   "why": "Defining vertical AI for legal and professional services",
+   "boards": [
+    "ashby:harvey"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Sierra",
+   "slug": "sierra",
+   "segment": "devtools-ai-apps",
+   "why": "AI customer-service agents for enterprises",
+   "boards": [
+    "ashby:sierra"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Glean",
+   "slug": "glean",
+   "segment": "devtools-ai-apps",
+   "why": "Enterprise AI search, assistant and agents",
+   "boards": [
+    "greenhouse:gleanwork"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Vercel",
+   "slug": "vercel",
+   "segment": "devtools-ai-apps",
+   "why": "AI SDK, v0 and hosting for AI apps and agents",
+   "boards": [
+    "greenhouse:vercel"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Waymo",
+   "slug": "waymo",
+   "segment": "robotics-autonomy",
+   "why": "Leading commercial robotaxi operator",
+   "boards": [
+    "greenhouse:waymo"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Tesla",
+   "slug": "tesla",
+   "segment": "robotics-autonomy",
+   "why": "FSD, Optimus humanoid, Dojo/AI compute",
+   "boards": [],
+   "enabled": false,
+   "note": "no public job feed: the careers site blocks non-browser clients (checked 2026-10-25)"
+  },
+  {
+   "name": "Figure AI",
+   "slug": "figure-ai",
+   "segment": "robotics-autonomy",
+   "why": "General-purpose humanoid robots",
+   "boards": [
+    "greenhouse:figureai"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Physical Intelligence",
+   "slug": "physical-intelligence",
+   "segment": "robotics-autonomy",
+   "why": "Foundation models for robots (pi)",
+   "boards": [
+    "ashby:physicalintelligence"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Wayve",
+   "slug": "wayve",
+   "segment": "robotics-autonomy",
+   "why": "End-to-end embodied AI for driving",
+   "boards": [
+    "ashby:wayve"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Applied Intuition",
+   "slug": "applied-intuition",
+   "segment": "robotics-autonomy",
+   "why": "Physical-AI software for vehicles, defense, trucking",
+   "boards": [
+    "ashby:applied"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Anduril",
+   "slug": "anduril",
+   "segment": "robotics-autonomy",
+   "why": "Autonomous defense systems",
+   "boards": [
+    "greenhouse:andurilindustries"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Stripe",
+   "slug": "stripe",
+   "segment": "fintech-platform",
+   "why": "Payments infra building agentic commerce and AI billing",
+   "boards": [
+    "greenhouse:stripe"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Palantir",
+   "slug": "palantir",
+   "segment": "fintech-platform",
+   "why": "AIP, LLMs on private enterprise and government data",
+   "boards": [
+    "lever:palantir"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "ServiceNow",
+   "slug": "servicenow",
+   "segment": "fintech-platform",
+   "why": "Enterprise workflow platform shipping AI agents across IT, HR and customer service",
+   "boards": [
+    "smartrecruiters:ServiceNow"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Zoox",
+   "slug": "zoox",
+   "segment": "robotics-autonomy",
+   "why": "Amazon-owned robotaxi company building purpose-built autonomous vehicles",
+   "boards": [
+    "lever:zoox"
+   ],
+   "enabled": true
+  },
+  {
+   "name": "Reflection AI",
+   "slug": "reflection-ai",
+   "segment": "frontier-lab",
+   "why": "Runner-up: see docs/research/top-companies.md",
+   "boards": [
+    "ashby:reflectionai"
+   ],
+   "enabled": false
+  },
+  {
+   "name": "Etched",
+   "slug": "etched",
+   "segment": "ai-chips",
+   "why": "Runner-up: see docs/research/top-companies.md",
+   "boards": [
+    "ashby:etched"
+   ],
+   "enabled": false
+  },
+  {
+   "name": "Modal",
+   "slug": "modal",
+   "segment": "ai-infra-data",
+   "why": "Runner-up: see docs/research/top-companies.md",
+   "boards": [
+    "ashby:modal"
+   ],
+   "enabled": false
+  },
+  {
+   "name": "Datadog",
+   "slug": "datadog",
+   "segment": "ai-infra-data",
+   "why": "Runner-up: see docs/research/top-companies.md",
+   "boards": [
+    "greenhouse:datadog"
+   ],
+   "enabled": false
+  },
+  {
+   "name": "Replit",
+   "slug": "replit",
+   "segment": "devtools-ai-apps",
+   "why": "Runner-up: see docs/research/top-companies.md",
+   "boards": [
+    "ashby:replit"
+   ],
+   "enabled": false
+  },
+  {
+   "name": "Lovable",
+   "slug": "lovable",
+   "segment": "devtools-ai-apps",
+   "why": "Runner-up: see docs/research/top-companies.md",
+   "boards": [
+    "ashby:lovable"
+   ],
+   "enabled": false
+  },
+  {
+   "name": "Notion",
+   "slug": "notion",
+   "segment": "devtools-ai-apps",
+   "why": "Runner-up: see docs/research/top-companies.md",
+   "boards": [
+    "ashby:notion"
+   ],
+   "enabled": false
+  },
+  {
+   "name": "Figma",
+   "slug": "figma",
+   "segment": "devtools-ai-apps",
+   "why": "Runner-up: see docs/research/top-companies.md",
+   "boards": [
+    "greenhouse:figma"
+   ],
+   "enabled": false
+  },
+  {
+   "name": "Decagon",
+   "slug": "decagon",
+   "segment": "devtools-ai-apps",
+   "why": "Runner-up: see docs/research/top-companies.md",
+   "boards": [
+    "ashby:decagon"
+   ],
+   "enabled": false
+  },
+  {
+   "name": "Runway",
+   "slug": "runway",
+   "segment": "devtools-ai-apps",
+   "why": "Runner-up: see docs/research/top-companies.md",
+   "boards": [
+    "ashby:runway-ml"
+   ],
+   "enabled": false
+  },
+  {
+   "name": "Black Forest Labs",
+   "slug": "black-forest-labs",
+   "segment": "frontier-lab",
+   "why": "Runner-up: see docs/research/top-companies.md",
+   "boards": [
+    "ashby:black-forest-labs"
+   ],
+   "enabled": false
+  },
+  {
+   "name": "1X",
+   "slug": "1x",
+   "segment": "robotics-autonomy",
+   "why": "Runner-up: see docs/research/top-companies.md",
+   "boards": [
+    "ashby:1x"
+   ],
+   "enabled": false
+  },
+  {
+   "name": "Boston Dynamics",
+   "slug": "boston-dynamics",
+   "segment": "robotics-autonomy",
+   "why": "Runner-up: see docs/research/top-companies.md",
+   "boards": [
+    "workday:bostondynamics.wd1.myworkdayjobs.com/bostondynamics/Boston_Dynamics"
+   ],
+   "enabled": false
+  },
+  {
+   "name": "Adobe",
+   "slug": "adobe",
+   "segment": "devtools-ai-apps",
+   "why": "Runner-up: see docs/research/top-companies.md",
+   "boards": [
+    "workday:adobe.wd5.myworkdayjobs.com/adobe/external_experienced"
+   ],
+   "enabled": false
+  }
+ ]
+}
