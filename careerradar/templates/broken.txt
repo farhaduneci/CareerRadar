@@ -1,0 +1,2 @@
+⚠️ careerradar: {company} board failed twice in a row, nothing closed until it recovers.
+{error}

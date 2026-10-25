@@ -1,0 +1,8 @@
+📰 {site_name} draft for {week}: {title}
+
+{digest}
+
+Preview: {preview_url}
+Publishes {hold_until} UTC unless held.
+Hold: {hold_url}
+Publish now: {publish_url}

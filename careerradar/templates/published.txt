@@ -1,0 +1,2 @@
+✅ {site_name} {week} is live: {title}
+{post_url}

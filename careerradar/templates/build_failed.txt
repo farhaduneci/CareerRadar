@@ -1,0 +1,1 @@
+⚠️ careerradar: issue {week} failed to build: {error}
