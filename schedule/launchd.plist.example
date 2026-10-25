@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Local runtime: one tick every 10 minutes. Copy to ~/Library/LaunchAgents/, fix the paths, launchctl load it. -->
+<plist version="1.0"><dict>
+  <key>Label</key><string>com.example.careerradar</string>
+  <key>WorkingDirectory</key><string>/path/to/CareerRadar</string>
+  <key>ProgramArguments</key>
+  <array><string>/usr/bin/python3</string><string>-m</string><string>careerradar</string><string>tick</string></array>
+  <key>StartInterval</key><integer>600</integer>
+  <key>StandardOutPath</key><string>/path/to/CareerRadar/data/tick.log</string>
+  <key>StandardErrorPath</key><string>/path/to/CareerRadar/data/tick.log</string>
+</dict></plist>
