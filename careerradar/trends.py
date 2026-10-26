@@ -41,7 +41,7 @@ def pct(a, b):
 def city(loc):
     """First place of a location list. 'US, CA, Santa Clara' (country first) -> Santa Clara; 'Paris, France' -> Paris."""
     parts = [p.strip() for p in (loc or "").split(";")[0].split(",") if p.strip()]
-    if not parts or re.match(r"^\d+ locations?$", parts[0], re.I):
+    if not parts or re.match(r"^(\d+ locations?|hybrid|remote|multiple locations?|various|anywhere)$", parts[0], re.I):
         return None
     return parts[-1] if len(parts) > 1 and re.fullmatch(r"[A-Z]{2,3}", parts[0]) else parts[0]
 
@@ -185,6 +185,14 @@ def group_by(rows, key):
     return out
 
 
+MIN_TAGGED = 200  # Jev-tagged roles needed before AI shares are figures, not anecdotes
+
+
 def brief(stats):
-    """The part of the numbers the writer sees: everything except the full company table."""
-    return {k: v for k, v in stats.items() if k not in ("companies_all",)}
+    """The part of the numbers the writer sees: everything except the full company table, and no AI shares from a
+    sample too small to mean anything."""
+    out = {k: v for k, v in stats.items() if k not in ("companies_all",)}
+    if (stats.get("ai") or {}).get("tagged_open", 0) < MIN_TAGGED:
+        out["ai"] = {"note": f"only {stats['ai']['tagged_open']} roles tagged so far: no AI-centrality figures this week"}
+        out["emerging"] = []
+    return out

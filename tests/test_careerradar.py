@@ -159,3 +159,9 @@ def test_draft_publishes_itself_after_hold_window(world):
     clock.t += 25 * 3600
     rec = run(runner.tick(app, crawl=False))
     assert rec["published"] == ["2026-W43"] and said[-1][0] in ("published", "health")
+
+
+def test_city_skips_non_places_and_small_ai_samples_stay_out_of_the_brief():
+    assert trends.city("Hybrid; Paris, France") is None and trends.city("US, CA, Santa Clara") == "Santa Clara"
+    b = trends.brief({"ai": {"tagged_open": 60, "ai_core_share": 1.7}, "emerging": [{"title": "x"}], "companies_all": []})
+    assert "ai_core_share" not in b["ai"] and b["emerging"] == [] and "companies_all" not in b
